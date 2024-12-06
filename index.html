@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Module</title>
+  <title>Two-Sided Chat Interface</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,37 +12,30 @@
     <div class="message-header">
       <img src="nobi.jpg" alt="User Avatar" class="avatar">
       <div class="user-info">
-        <h4 class="user-name">Nobita</h4>
-        <p class="last-seen">Last seen: 10:30 AM</p>
+        <h4 class="user-name">Chat Simulation</h4>
+        <p class="last-seen">Last seen: Now</p>
       </div>
     </div>
 
     <!-- Chat Box -->
     <div class="chat-box">
       <!-- Message Page -->
-      <div class="message-page">
-        <div class="message incoming">
-          <img src="suzuka.jpg" alt="Sender Avatar" class="avatar">
-          <div class="message-content">
-            <p>Hello! How are you?</p>
-            <span class="message-time">10:32 AM</span>
-          </div>
-        </div>
-        <div class="message outgoing">
-          <div class="message-content">
-            <p>I’m good, thanks! How about you?</p>
-            <span class="message-time">10:33 AM</span>
-          </div>
-        </div>
+      <div class="message-page"></div>
+
+      <!-- Message Bottom (Left Side Input) -->
+      <div class="message-bottom">
+        <input type="text" placeholder="Type a message as User 1..." class="message-input" id="left-input">
+        <button class="send-button" id="left-send">Send</button>
       </div>
 
-      <!-- Message Bottom -->
+      <!-- Message Bottom (Right Side Input) -->
       <div class="message-bottom">
-        <input type="text" placeholder="Type your message here..." class="message-input">
-        <button class="send-button">Send</button>
+        <input type="text" placeholder="Type a message as User 2..." class="message-input" id="right-input">
+        <button class="send-button" id="right-send">Send</button>
       </div>
     </div>
   </div>
+
   <script src="javasc.js"></script>
 </body>
 </html>
