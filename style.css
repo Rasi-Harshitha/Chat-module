@@ -2,13 +2,33 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
 }
 
+/* Roll Numbers Section Styling */
+.rollnos {
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  position: relative; /* Ensure proper stacking in layout */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional for visual separation */
+}
+
+.rollnos p {
+  margin: 0;
+  color: #333;
+}
+
+/* Chat Container */
 .chat-container {
   width: 400px;
   background-color: #ffffff;
@@ -17,6 +37,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin-top: 20px; /* Space below the roll numbers section */
 }
 
 /* Message Header */
